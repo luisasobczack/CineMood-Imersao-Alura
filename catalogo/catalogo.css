@@ -541,3 +541,61 @@ footer {
 [data-theme='light'] .nav-links a:hover {
   color: #444;
 }
+
+[data-theme='light'] .card-details {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fafafa;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding: 18px 16px;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s 0s,
+    visibility 0.3s 0s;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 2;
+  cursor: default;
+}
+
+[data-theme='light'] .btn-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #fafafa;
+  border: 1px solid rgb(8, 7, 7);
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  transition:
+    border-color 0.2s,
+    background-color 0.2s;
+}
+
+[data-theme='light'] .details-tags {
+  display: flex;
+  gap: 6px;
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.9);
+  margin-top: 4px;
+}
+
+[data-theme='light'] .resolution {
+  border: 1px solid rgba(1, 0, 0, 0.4);
+  padding: 1px 3px;
+  border-radius: 2px;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+[data-theme='light'] .duration {
+  color: rgba(0, 0, 0, 0.9);
+}
